@@ -270,10 +270,16 @@ public class RealtimeBlurView extends View {
 					mBlurringCanvas.restoreToCount(rc);
 				}
 
-				blur(mBitmapToBlur, mBlurredBitmap);
+				try {
+					blur(mBitmapToBlur, mBlurredBitmap);
 
-				if (redrawBitmap || mDifferentRoot) {
-					invalidate();
+					if (redrawBitmap || mDifferentRoot) {
+						invalidate();
+					}
+				} catch (Exception e){
+					e.printStackTrace();
+					release();
+
 				}
 			}
 

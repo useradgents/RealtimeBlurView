@@ -6,6 +6,7 @@ dependencies {
 }
 
 android {
+    namespace "com.github.mmin18.realtimeblurview.sample"
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
