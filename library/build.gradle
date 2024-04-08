@@ -19,10 +19,6 @@ android {
         abortOnError rootProject.ext.lintAbortOnError
     }
 
-    compileOptions {
-        sourceCompatibility rootProject.ext.sourceCompatibility
-        targetCompatibility rootProject.ext.targetCompatibility
-    }
 
     sourceSets {
         main {
